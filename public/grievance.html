@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Grievance 💌</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="form-page">
+    <div class="overlay">
+        <img src="assets/love.png" class="background-photo" alt="bg">
+  <form id="grievanceForm" class="grievance-form" action="/submit" method="POST">
+    <h2>Tell Me What's On Your Heart</h2>
+
+    <input type="text" name="title" placeholder="Grievance Title 💭" required>
+
+    <textarea name="description" rows="5" placeholder="Describe your problem..." required></textarea>
+
+    <label for="mood">How are you feeling? 🧠💓</label>
+<select name="mood" id="mood" required>
+  <option value="">Select your mood 💭</option>
+  <option value="😊">😊 Happy</option>
+  <option value="😢">😢 Sad</option>
+  <option value="😠">😠 Angry</option>
+  <option value="💔">💔 Heartbroken</option>
+  <option value="🥰">🥰 Loved</option>
+  <option value="😴">😴 Tired</option>
+  <option value="🤒">🤒 Sick</option>
+  <option value="😤">😤 Frustrated</option>
+  <option value="😳">😳 Embarrassed</option>
+  <option value="😕">😕 Confused</option>
+  <option value="😇">😇 Peaceful</option>
+  <option value="🤯">🤯 Overwhelmed</option>
+  <option value="😭">😭 Crying</option>
+  <option value="😎">😎 Confident</option>
+  <option value="🥺">🥺 Emotional</option>
+  <option value="😬">😬 Nervous</option>
+  <option value="🫠">🫠 Melting</option>
+  <option value="😇">😇 Hopeful</option>
+  <option value="🙄">🙄 Annoyed</option>
+  <option value="❤️">❤️ Loved</option>
+  <option value="🤗">🤗 Hug Needed</option>
+  <option value="🙈">🙈 Shy</option>
+  <option value="😶‍🌫️">😶‍🌫️ Numb</option>
+  <option value="🥹">🥹 Grateful</option>
+  <option value="😌">😌 Relieved</option>
+  <option value="😩">😩 Exhausted</option>
+  <option value="😓">😓 Stressed</option>
+  <option value="😵">😵 Dizzy</option>
+  <option value="🫥">🫥 Blank</option>
+  <option value="🙂">🙂 Disappointed</option>
+  <option value="👊">👊 Feel like punching me?</option>
+  <option value="🫂">🫂 Missing Me?</option>
+</select>
+    <button type="submit">Submit 💖</button>
+  </form>
+  </div>
+<script src="script.js"></script>
+<script>
+  checkAuth();
+</script>
+</body>
+</html>
